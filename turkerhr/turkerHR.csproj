@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{17B31465-3C88-413E-9DC9-4D5327A6D4D1}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>turkerHR</RootNamespace>
+    <AssemblyName>turkerHR</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>C:\pub\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>18</ApplicationRevision>
+    <ApplicationVersion>1.0.1.18</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>ED6B7AF8B42C7686312C3A78348820036048F468</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>turkerHR_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAdaySil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdaySil.Designer.cs">
+      <DependentUpon>frmAdaySil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDigerHizmetler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDigerHizmetler.Designer.cs">
+      <DependentUpon>frmDigerHizmetler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEgitimBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEgitimBilgileri.Designer.cs">
+      <DependentUpon>frmEgitimBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEgitimBilgileriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEgitimBilgileriEkle.Designer.cs">
+      <DependentUpon>frmEgitimBilgileriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIsTecrubeleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIsTecrubeleri.Designer.cs">
+      <DependentUpon>frmIsTecrubeleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIsTecrubeleriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIsTecrubeleriEkle.Designer.cs">
+      <DependentUpon>frmIsTecrubeleriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKurslarSertifikalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKurslarSertifikalar.Designer.cs">
+      <DependentUpon>frmKurslarSertifikalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKurslarSertifikalarEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKurslarSertifikalarEkle.Designer.cs">
+      <DependentUpon>frmKurslarSertifikalarEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListe.Designer.cs">
+      <DependentUpon>frmListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPozisyonlarDiger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPozisyonlarDiger.Designer.cs">
+      <DependentUpon>frmPozisyonlarDiger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReferanslar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReferanslar.Designer.cs">
+      <DependentUpon>frmReferanslar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReferanslarEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReferanslarEkle.Designer.cs">
+      <DependentUpon>frmReferanslarEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmYabanciDiller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYabanciDiller.Designer.cs">
+      <DependentUpon>frmYabanciDiller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="turkerHRDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>turkerHRDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="turkerHRDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>turkerHRDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="meslekler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="meslekler.Designer.cs">
+      <DependentUpon>meslekler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="turkerHRveritabaniDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>turkerHRveritabaniDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="turkerHRveritabaniDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>turkerHRveritabaniDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="turkerHRveritabaniDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>turkerHRveritabaniDataSet2.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAdaySil.resx">
+      <DependentUpon>frmAdaySil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDigerHizmetler.resx">
+      <DependentUpon>frmDigerHizmetler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEgitimBilgileri.resx">
+      <DependentUpon>frmEgitimBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEgitimBilgileriEkle.resx">
+      <DependentUpon>frmEgitimBilgileriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIsTecrubeleri.resx">
+      <DependentUpon>frmIsTecrubeleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIsTecrubeleriEkle.resx">
+      <DependentUpon>frmIsTecrubeleriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKurslarSertifikalar.resx">
+      <DependentUpon>frmKurslarSertifikalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKurslarSertifikalarEkle.resx">
+      <DependentUpon>frmKurslarSertifikalarEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListe.resx">
+      <DependentUpon>frmListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPozisyonlarDiger.resx">
+      <DependentUpon>frmPozisyonlarDiger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReferanslar.resx">
+      <DependentUpon>frmReferanslar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReferanslarEkle.resx">
+      <DependentUpon>frmReferanslarEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYabanciDiller.resx">
+      <DependentUpon>frmYabanciDiller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="meslekler.resx">
+      <DependentUpon>meslekler.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="turkerHRveritabani.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="turkerHRDataSet.xsc">
+      <DependentUpon>turkerHRDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="turkerHRDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>turkerHRDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="turkerHRDataSet.xss">
+      <DependentUpon>turkerHRDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="turkerHRDataSet1.xsc">
+      <DependentUpon>turkerHRDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="turkerHRDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>turkerHRDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="turkerHRDataSet1.xss">
+      <DependentUpon>turkerHRDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="turkerHRveritabaniDataSet.xsc">
+      <DependentUpon>turkerHRveritabaniDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="turkerHRveritabaniDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>turkerHRveritabaniDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="turkerHRveritabaniDataSet.xss">
+      <DependentUpon>turkerHRveritabaniDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="turkerHRveritabaniDataSet1.xsc">
+      <DependentUpon>turkerHRveritabaniDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="turkerHRveritabaniDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>turkerHRveritabaniDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="turkerHRveritabaniDataSet1.xss">
+      <DependentUpon>turkerHRveritabaniDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="turkerHRveritabaniDataSet2.xsc">
+      <DependentUpon>turkerHRveritabaniDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="turkerHRveritabaniDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>turkerHRveritabaniDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="turkerHRveritabaniDataSet2.xss">
+      <DependentUpon>turkerHRveritabaniDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="turkerHR_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+</Project>
